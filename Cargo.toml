@@ -10,5 +10,5 @@ description = "N-dimensional FFT"
 keywords = ["fft"]
 
 [dependencies]
-rustfft = "2.0.0"
-ndarray = "0.10.13"
+rustfft = "3.0.0"
+ndarray = "0.12.1"

@@ -2,9 +2,12 @@
 extern crate rustfft;
 extern crate ndarray;
 
-use rustfft::{FFTnum, FFTplanner};
-use rustfft::num_complex::Complex;
-use rustfft::num_traits::{Zero};
+use rustfft::{
+    FFTnum, FFTplanner,
+    num_complex::Complex,
+    num_traits::{Zero}
+};
+
 use ndarray::{ArrayViewMut, ArrayViewMut2, Dimension};
 
 fn _fft<T: FFTnum>(input: &mut [Complex<T>], output: &mut [Complex<T>], inverse: bool) {
